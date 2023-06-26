@@ -10,9 +10,20 @@
     */
 
     // Entrada
+const graus = Number (prompt(`qual a temperatura em graus celsius`))
     
     // Processamento
+    if(graus <= 100){
+        alert(`está muito baixa`)
+    }
+    else if(graus <= 200 ){
+        alert(`esta baixa`)
+    }
+    else if(graus <= 500){
+        alert(`esta normal`)
+    }
+    else if (graus <= 501){
+        alert(`esta muito alta`)
+    }
 
-    // Saída
-
-</script>
+    </script>

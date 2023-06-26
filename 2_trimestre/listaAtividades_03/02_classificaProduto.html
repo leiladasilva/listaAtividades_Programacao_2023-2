@@ -13,8 +13,30 @@
     */
 
     // Entrada
+    const Alimento = Number(prompt(`ìnforme o codigo do produto desejado`))
     
     // Processamento
+    if(Alimento <= 1){
+        alert(`àlimento não-perecivel`)
+    }
+    else if(Alimento <= 4 ){
+        alert(`alimento perecivel`)
+    }
+    else if(Alimento <= 6){
+        alert(`vestuario`)
+    }
+    else if(Alimento <= 7){
+        alert(`higiene pessoal`)
+    }
+    else if(Alimento <= 15){
+        alert(`limpeza e utensilios domesticos`)
+    }
+    else if(Alimento <= 16 ){
+        alert(`outros`)
+    }
+    else if (Alimento <= 21 ){
+        alert(`codigo invalido`)
+    }
 
     // Saída
 

@@ -1,3 +1,4 @@
+
 <meta charset="UTF-8" />
 <script>
     // Problema: Reajuste de salário
@@ -15,8 +16,25 @@
     */
 
     // Entrada
+    const sal = Number (prompt(`qual o seu salario`))
     
     // Processamento
+    if(sal <= 2000 ){
+        sal1 = sal + (sal * 15/100)
+        alert(`o reajuste sera de ${sal1}`)
+    }
+    else if(sal <=3999){
+        sal2 = sal + (sal * 10/100)
+        alert(`o reajuste sera de ${sal2}`)
+    }
+    else if(sal >=4000){
+        sal3 = sal + (sal * 7.5/100)
+        alert(`o reajuste sera de ${sal3}`)
+    }
+    else if (sal >= 7000){
+        sal4= sal + (sal * 5/100)
+        alert(` o reajuste sera de ${sal4}`)
+    }
 
     // Saída
 
