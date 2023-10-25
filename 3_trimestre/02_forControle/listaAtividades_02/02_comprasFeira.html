@@ -21,25 +21,37 @@
 
 
     //ENTRADA
-    const n = Number(prompt("Informe a quantidade de itens que foram vendidos"));
-    tomate = 3.90
-    batata = 3.40
-    batatadoce = 4.70
-    alface = 1.50
-    cebola = 2.90
-    cebolinha = 1.40
-    beterraba = 4.10
+    const tomate = Number(prompt("quantidade de tomate vendido (3.90)"));
+    const batata = Number(prompt("quantidade de batata vendido (3.40)"));
+    const batatadoce = Number(prompt("quantidade de batata-doce vendido (4.70)"));
+    const alface = Number(prompt("quantidade de alface vendido (1.50)"));
+    const  cebola= Number(prompt("quantidade de cebola vendido (2.90)"));
+    const cebolinha = Number(prompt("quantidade de cebolinhavendido (1.40)"));
+    const beterraba = Number(prompt("quantidade de beterraba vendido (4.10)"));
+    tomatev = 3.90
+    batatav = 3.40
+    batatadocev = 4.70
+    alfacev = 1.50
+    cebolav = 2.90
+    cebolinhav = 1.40
+    beterrabav = 4.10
 
-
+totalt= tomate * tomatev
+totalb = batata * batatav
+totalbd = batatadoce * batatadocev
+totala = alface * alfacev
+totalc = cebola * cebolav
+totalcl = cebolinha * cebolinhav
+totalbt = beterraba * beterrabav
     //PROCESSAMENTO
-    for (let i = 0; i < n; i++) {
-        let nota = (prompt(`Informe o produto ${i + 1}`));
-    }
+    for (let total = 0; total < n; total++) {
+      total = totalt + totalb + totalbd + totala + totalc + totalcl + totalbt
+   document.write(`o valor é de : ${total}`) }
 
     
 
     //SAÍDA
-    document.write(`A média das notas é: ${nota}`);
+    ;
 
 
 

@@ -6,11 +6,20 @@
     Apresente os valores para cada um dos períodos.
     Apresente também qual foi o rendimento que a pessoa obteve em cada um dos períodos (ou seja, o que conseguiu obter além da quantia investida).
     */
+    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+let numerosInteirosPositivos = [];
 
-    //ENTRADA
+// Filtra os números inteiros e positivos
+for (const numero of listaDeNumeros) {
+  if (Number.isInteger(numero) && numero > 0) {
+    numerosInteirosPositivos.push(numero);
+  }
+}
 
-    
-    //PROCESSAMENTO
+const quantidadeNumeros = numerosInteirosPositivos.length;
+
+document.write("Números Inteiros e Positivos:", numerosInteirosPositivos);
+document.write("Quantidade de Números Inteiros e Positivos:", quantidadeNumeros);
     
     
     //SAÍDA
